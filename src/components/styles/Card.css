@@ -28,3 +28,13 @@
     margin-bottom: 80px;
     height: 60px;
 }
+/*========== ESTILOS DEL BOTON AGREGAR ===========*/
+
+.btn-agregar {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.btn-agregar img {
+    margin: auto;
+    display: table;
+}

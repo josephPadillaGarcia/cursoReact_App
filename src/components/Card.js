@@ -4,17 +4,10 @@ import circleImg from '../img/circles.png'
 import './styles/Card.css'
 
 class Card extends React.Component{
-
-	constructor(props){
-		super(props)
-		this.state = {
-			image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/bulbasaur.png?alt=media&token=567caf19-af47-414e-a9d4-3854ab24c7dc'
-		}
-	}
-
+	
 	render(){
 		// ====================
-		/* PROPS -> son establecidas por el padre y son fijas durante toda la vida de un componente */
+		/* PROPS -> son establecidas por el padre y SON FIJOS durante toda la vida de un componente */
 		//===============
 		//return <h1> Hola pendejo </h1>
 		const {title, descripcion, img, leftColor, colorIzquierda} = this.props
@@ -31,7 +24,7 @@ class Card extends React.Component{
 				<div className="card-body">
 					<div className="row center">
 						<div className="col-6">
-							<img src={this.state.image} className="float-right"/>
+							<img src={img} className="float-right"/>
 						</div>
 						<div className="col-6 Fitness-Card-Info">
 							<h1>{title}</h1>
